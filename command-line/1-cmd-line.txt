@@ -1,0 +1,37 @@
+Julia Ingram
+Homework 01 Part 2
+2021-11-02
+
+WORKPLACE FATALITIES
+
+cd /Users/jmingram/Desktop/Columbia/Fall-2021/Foundations/Homework
+ls
+
+1. HOW MANY ACCIDENTS? 
+head -5 OSHA-fatalities-FY2017.csv 
+wc -l OSHA-fatalities-FY2017.csv
+
+*** The data has two header-like rows, so subtract two from the output of the next line to get the total number of incidents ***
+
+2. ONLY SHOW EXPLOSIONS
+grep "explosion" OSHA-fatalities-FY2017.csv
+ 
+3. FILE OF ONLY 2017 ACCIDENTS, HOW MANY LINES?
+grep "2017" OSHA-fatalities-FY2017.csv > 2017-fatalities.csv
+wc -l 2017-fatalities.csv
+*** No subtraction necessary since grep doesn't pick up header rows ***
+
+4. ONLY THE FIRST LINE OF THE FILE
+head -n 1 OSHA-fatalities-FY2017.csv
+
+5. FILE OF FORKLIFT ACCIDENTS, HOW MANY ACCIDENTS?
+grep "forklift" OSHA-fatalities-FY2017.csv > forklift-fatalities.csv
+wc -l forklift-fatalities.csv
+
+6. FILE OF CHRISTMAS EVE ACCIDENTS, HOW MANY?
+grep "12/31" OSHA-fatalities-FY2017.csv > christmas-eve-fatalities.csv
+wc -l christmas-eve-fatalities.csv
+*** I tried to figure this out with awk '$1 == "12/31"' OSHA-fatalities-FY2017.csv so it would work in a dataset in which date-like numbers might appear outside of the date field but couldn't get it to work ***
+
+7. TEXT FILE OF ACCIDENTS INVOLVING TREES
+grep "tree" OSHA-fatalities-FY2017.csv > tree-fatalities.txt
