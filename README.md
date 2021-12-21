@@ -1,6 +1,6 @@
 # Fall 2021 Data Homework, Columbia Journalism School 
 
-Hello! This repository contains homework assignments completed for my two data and computing courses in my first semester as an M.S. Data Journalism student at Columbia. The assignments were for **Foundations of Computing**, taught by Jonathan Soma, and **Data & Databases**, taught by Jonathan Thirkield, where I learned querying in SQL, cleaning and analyzing data with pandas, scraping the web and parsing text with regular expressions.
+This repository contains homework assignments completed for my two data and computing courses in my first semester as an M.S. Data Journalism student at Columbia. The assignments were for **Foundations of Computing**, taught by Jonathan Soma, and **Data & Databases**, taught by Jonathan Thirkield, where I learned querying in SQL, cleaning and analyzing data with pandas, scraping the web and parsing text with regular expressions.
 
 Note: The numbering on the files corresponds to the numbers the assignments were given for each class, but can otherwise be disregarded! 
 
